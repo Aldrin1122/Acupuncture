@@ -25,11 +25,269 @@ a {
   border-bottom: 20px solid #e85d64;
 }
 
+/*-------------BANNER---------------*/
 .banner {
   background-image: url("/img/banner.jpg");
+  background-blend-mode: multiply;
   background-repeat: no-repeat;
+  background-color: rgba(128, 128, 128, 0.5);
   background-size: cover;
   height: 80vh;
+  text-align: center;
+  color: #f2f2f2;
+}
+.banner hr {
+  width: 30%;
+  margin: 2rem auto;
+}
+.banner h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+.banner h3 {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+/*-------------SERVICES---------------*/
+.services {
+  padding: 6rem 0;
+  color: #3d4045;
+}
+.services__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+@media screen and (max-width: 48rem) {
+  .services__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+  }
+}
+
+.offer {
+  padding-bottom: 2rem;
+  background-color: #3d4045;
+  text-align: center;
+  color: #f2f2f2;
+}
+.offer h4 {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+/*-------------DOCTOR---------------*/
+.robert {
+  padding: 6rem 0;
+}
+.robert__wrapper {
+  gap: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 48rem) {
+  .robert__wrapper {
+    display: block;
+  }
+  .robert__wrapper img {
+    max-width: 100%;
+  }
+}
+.robert h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.robert p {
+  font-size: 1.3rem;
+}
+.robert img {
+  width: 90rem;
+}
+
+/*-------------CLINIC---------------*/
+.clinic {
+  background-color: rgba(128, 128, 128, 0.02);
+  padding: 6rem 0;
+}
+.clinic__wrapper {
+  gap: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 48rem) {
+  .clinic__wrapper {
+    display: block;
+  }
+  .clinic__wrapper img {
+    max-width: 100%;
+  }
+}
+.clinic h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.clinic p {
+  font-size: 1.3rem;
+}
+.clinic img {
+  width: 165rem;
+}
+
+/*-------------QUOTES---------------*/
+.slider {
+  padding: 6rem 0;
+}
+.slider .testimonials {
+  text-align: center;
+}
+.slider h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.slider h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #e85d64;
+}
+.slider img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider p {
+  margin-top: 2rem;
+  padding: 0 3.5rem;
+}
+.slider span {
+  background-color: #3d4045;
+  display: block;
+  height: 0.2rem;
+  width: 50%;
+  margin: 2rem auto;
+}
+
+/*-------------NAVIGATION SLIDER---------------*/
+.tns-nav {
+  text-align: center;
+}
+.tns-nav button {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  border: none;
+  margin: 0 10px;
+}
+.tns-nav .tns-nav-active {
+  background-color: #e85d64;
+}
+
+.tns-controls {
+  position: relative;
+}
+.tns-controls button:first-child {
+  position: absolute;
+  top: 5rem;
+  border: none;
+  z-index: 1;
+  font-size: 2rem;
+  background: none;
+}
+.tns-controls button:last-child {
+  position: absolute;
+  right: 0;
+  top: 5rem;
+  background: none;
+  border: none;
+  z-index: 1;
+  font-size: 2rem;
+}
+
+/*---------------QUESTIONS-----------------*/
+.questions {
+  padding: 4rem 0;
+  background-color: rgba(128, 128, 128, 0.05);
+}
+.questions h1 {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+.questions h2 {
+  color: #e85d64;
+}
+
+/*-------------DETAILS---------------*/
+.details {
+  background-color: #3d4045;
+  padding: 6rem 0;
+}
+.details__wrapper {
+  color: #f2f2f2;
+  gap: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 48rem) {
+  .details__wrapper {
+    display: block;
+  }
+  .details__wrapper img {
+    max-width: 100%;
+  }
+  .details__wrapper span {
+    max-width: 90%;
+  }
+}
+.details img {
+  width: 50rem;
+}
+.details h2 {
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+.details h3 {
+  margin-left: 2rem;
+}
+.details p {
+  margin-left: 2rem;
+}
+.details span {
+  background-color: #e85d64;
+  display: block;
+  height: 0.2rem;
+  width: 100%;
+}
+
+/*-------------FOOTER---------------*/
+.footer {
+  color: #f2f2f2;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background-color: #e85d64;
+}
+.footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer a {
+  color: #f2f2f2;
+  margin: 0 2rem;
+}
+@media screen and (max-width: 48rem) {
+  .footer__wrapper {
+    display: flex;
+    display: block;
+  }
+  .footer__wrapper a {
+    display: block;
+    margin: 0;
+    padding-left: 2rem;
+  }
+  .footer__wrapper span {
+    display: none;
+  }
 }
 
 .bg--primary {
@@ -40,12 +298,38 @@ a {
   color: #e85d64;
 }
 
+.btn.bg--primary {
+  padding: 0.5rem 3rem;
+  color: #f2f2f2;
+  font-weight: 700;
+  font-size: 1.4rem;
+  border-radius: 5rem;
+  display: inline-block;
+  background: #e85d64;
+}
+.btn.bg--primary:hover {
+  background: #e23039;
+}
+
 .bg--dark {
   background-color: #000000;
 }
 
 .text--dark {
   color: #000000;
+}
+
+.btn.bg--dark {
+  padding: 0.5rem 3rem;
+  color: #f2f2f2;
+  font-weight: 700;
+  font-size: 1.4rem;
+  border-radius: 5rem;
+  display: inline-block;
+  background: #000000;
+}
+.btn.bg--dark:hover {
+  background: black;
 }
 
 .bg--light {
@@ -56,12 +340,38 @@ a {
   color: #f2f2f2;
 }
 
+.btn.bg--light {
+  padding: 0.5rem 3rem;
+  color: #f2f2f2;
+  font-weight: 700;
+  font-size: 1.4rem;
+  border-radius: 5rem;
+  display: inline-block;
+  background: #f2f2f2;
+}
+.btn.bg--light:hover {
+  background: #d9d9d9;
+}
+
 .bg--gray {
   background-color: #3d4045;
 }
 
 .text--gray {
   color: #3d4045;
+}
+
+.btn.bg--gray {
+  padding: 0.5rem 3rem;
+  color: #f2f2f2;
+  font-weight: 700;
+  font-size: 1.4rem;
+  border-radius: 5rem;
+  display: inline-block;
+  background: #3d4045;
+}
+.btn.bg--gray:hover {
+  background: #25272a;
 }
 
 .text--center {
@@ -130,4 +440,44 @@ a {
 
 .align--end {
   align-items: flex-end;
+}
+
+.mb--1 {
+  margin: 1rem;
+}
+
+.mb--2 {
+  margin: 2rem;
+}
+
+.mb--3 {
+  margin: 3rem;
+}
+
+.mb--4 {
+  margin: 4rem;
+}
+
+.mb--5 {
+  margin: 5rem;
+}
+
+.mb--6 {
+  margin: 6rem;
+}
+
+.mb--7 {
+  margin: 7rem;
+}
+
+.mb--8 {
+  margin: 8rem;
+}
+
+.mb--9 {
+  margin: 9rem;
+}
+
+.mb--10 {
+  margin: 10rem;
 }/*# sourceMappingURL=main.min.css.map */
