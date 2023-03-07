@@ -192,24 +192,20 @@
 
 .details{
     background-color: $clr-gray;
-    padding: 6rem 0;
+    padding-top: 6rem;
     &__wrapper{
         color: $clr-white;
         gap: 4rem;
         @include centerflex;
         @include mediaQuery(){
+            padding-bottom: 3rem;
             display: block;
-            iframe {
-                max-width: 20rem;
-            }
             span {
                 max-width: 90%;
             }
         }
     }
-    iframe{
-        width: 50rem;
-    }
+
     h2 {
         font-size: 2rem;
         margin-left: 2rem;
