@@ -233,9 +233,6 @@ a {
     padding-bottom: 3rem;
     display: block;
   }
-  .details__wrapper span {
-    max-width: 90%;
-  }
 }
 .details h2 {
   font-size: 2rem;
@@ -247,11 +244,8 @@ a {
 .details p {
   margin-left: 2rem;
 }
-.details span {
-  background-color: #e85d64;
-  display: block;
-  height: 0.2rem;
-  width: 100%;
+.details hr {
+  border: 1px solid #e85d64;
 }
 
 /*-------------FOOTER---------------*/
@@ -267,8 +261,12 @@ a {
   align-items: center;
 }
 .footer a {
+  border-right: 2px solid #f2f2f2;
   color: #f2f2f2;
-  margin: 0 2rem;
+  padding: 0 2rem;
+}
+.footer a:nth-child(6) {
+  border-right: none;
 }
 @media screen and (max-width: 48rem) {
   .footer__wrapper {
@@ -279,9 +277,7 @@ a {
     display: block;
     margin: 0;
     padding-left: 2rem;
-  }
-  .footer__wrapper span {
-    display: none;
+    border-right: none;
   }
 }
 

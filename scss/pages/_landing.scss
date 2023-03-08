@@ -87,6 +87,7 @@
             display: block;
             img {
                 max-width: 100%;
+                
             }
         }
     }
@@ -200,9 +201,6 @@
         @include mediaQuery(){
             padding-bottom: 3rem;
             display: block;
-            span {
-                max-width: 90%;
-            }
         }
     }
 
@@ -216,11 +214,9 @@
     p {
         margin-left: 2rem;
     }
-    span {
-        background-color: $clr-primary;
-        display: block;
-        height: 0.2rem;
-        width: 100%;
+
+    hr{
+        border: 1px solid $clr-primary;
     }
 }
 
@@ -235,9 +231,14 @@
         @include centerAll
     }
     a {
+        border-right: 2px solid $clr-white;
         color: $clr-white;
-        margin: 0 2rem;
+        padding: 0 2rem;  
     }
+    a:nth-child(6){
+        border-right: none;
+    }
+
     &__wrapper{
         @include mediaQuery(){
             display: flex;
@@ -246,10 +247,9 @@
                 display: block;
                 margin: 0;
                 padding-left: 2rem;
+                border-right: none;
             }
-            span {
-                display: none;
-            }
+         
         }
     }
 }
